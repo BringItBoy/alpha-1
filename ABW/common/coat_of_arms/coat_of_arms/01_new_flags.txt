@@ -1,0 +1,26 @@
+BYZ = {
+	pattern = "pattern_ui01.tga"
+	color1= "roman_red"
+	color2= "ck2_yellow"
+	
+	colored_emblem = {
+		texture = "ce_ui01.dds"
+		color1 = "ck2_yellow"
+		instance = { position = { 0.79 0.22 } scale = {  0.34  0.34 } }
+		instance = { position = { 0.79 0.79 } scale = {  0.34 -0.34 } }
+		instance = { position = { 0.21 0.22 } scale = { -0.34  0.34 } }
+		instance = { position = { 0.21 0.79 } scale = { -0.34 -0.34 } }
+	}
+}
+
+GEN = {
+	pattern = "pattern_ui01.tga"
+	color1={ 255 255 255 }
+    color2={ 187 0 7 }
+}
+
+PIS = {
+    pattern = "pattern_ui02.tga"
+    color1={ 255 255 255 }
+    color2={ 187 0 7 }
+}

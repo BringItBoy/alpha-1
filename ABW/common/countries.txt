@@ -124,6 +124,17 @@ BUL = "countries/bul.txt"
 HUN = "countries/hun.txt"
 POL = "countries/pol.txt"
 PPP = "countries/ppp.txt"
+CUM = "countries/cum.txt"
+ALN = "countries/aln.txt"
+GAV = "countries/gav.txt"
+KIE = "countries/kie.txt"
+LAT = "countries/lat.txt"
+TES = "countries/tes.txt"
+ACC = "countries/acc.txt"
+ATH = "countries/ath.txt"
+EPI = "countries/epi.txt"
+TRB = "countries/trb.txt"
+NIC = "countries/nic.txt"
 
 
 ###ASIA and AFRICA###
@@ -132,12 +143,21 @@ PPP = "countries/ppp.txt"
 CIL = "countries/cil.txt"
 RUM = "countries/rum.txt"
 
+# Irak, Iran, Armenia
+GEO = "countries/geo.txt"
+ARM = "countries/arm.txt"
+AZZ = "countries/azz.txt"
+ABS = "countries/abs.txt"
+FAR = "countries/far.txt"
+KHO = "countries/kho.txt"
+
 # Crusader States
 JER = "countries/jer.txt"
 ANT = "countries/ant.txt"
 TRI = "countries/tri.txt"
+CYP = "countries/cyp.txt"
 
-# Islam
+# North Africa, Egypt, Syria
 ALA = "countries/ala.txt"
 AYY = "countries/ayy.txt"
 ALM = "countries/alm.txt"

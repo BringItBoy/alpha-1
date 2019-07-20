@@ -1,0 +1,157 @@
+﻿hellenic = {
+	
+	color = hsv { 0.65  0.7  0.8 }
+
+	male_names = {
+		Michael Theodoros
+	}
+	female_names = {
+		Charis 
+	}
+
+	nickname = {
+		NICKNAME_EPIPHANES
+		NICKNAME_EUERGETES
+		NICKNAME_EUPATOR
+		NICKNAME_EUSEBES
+		NICKNAME_KALLINIKOS
+		NICKNAME_NEOS_DIONYSOS
+		NICKNAME_NIKATOR
+		NICKNAME_PHILADELPHOS
+		NICKNAME_PHILOMETOR
+		NICKNAME_PHILOPATOR
+		NICKNAME_SOTER
+		NICKNAME_THEOS
+		NICKNAME_POLIORCETES
+		NICKNAME_DOSON
+		NICKNAME_GONATAS
+		NICKNAME_KALOS
+	}
+	
+	family = {
+		Komnenos.Komnenos.Komnenos.Komnenos
+		Laskaris.Laskaris.Laskaris.Laskaris
+	}
+	culture = {
+		greek = {}
+		##
+		macedonian = {}
+		parthinian = {}
+		taulantian = {
+			male_names = {
+               Agirrus Agron Annaeus Ballaeus Bardylis Bato Blodus Boiken Breigos Brykos Carvus Dazaios Epetinus Epicadus Epidamnos Epidius Genthius Glaucias Glavus Grabus Laiscus Loiscus Monunius Mytilus Pinnes Plaianus Plaios Plares Plator Pleuratus Pravaius Scerdilaidas Sceudis Strabainos Sychos Tadus Temans Verzo Zanatis Ziraeus Beucus Platius Purtus Sameccus Annaius Anneses Bisius Bizo Breucus Anneses Daeicus Dasantus Scenobarbus Implaius Lavius Massurius Baolius Ulcidius Temaius Baedarus
+               Dases Dasmenus # Used among the Amantini and Scordisci
+               Carvanius Germanus Lavianus Panto Pinsus Pladomenus Vendo Verzaiius # Of Dalmatian origin
+               Arvus Belzeius Cambrius Iaritus Lautus # Of Celtic origin
+               Auluzon Bessus Bitus Dolens Mucatral Teres # Of Thracian origin
+               Argurianus # Of Thracian or Celtic origin
+           }
+           female_names = {
+               Andia Andena Antis Batina Batouna Boria Cinna Dasa Etuta Glavicida Isnthena Koreta Laedio Lossa Lydra Madena Malika Mavida Nevato Passia Plaia Platoura Posantio Scodrina Surio Sutta Syra Syrmas Tata Temeia Temiteuta Temus Teuta Teutaia Triteuta Tuta Zaimina Zorata
+               Precio Terco # Used among the Amantini and Scordisci
+               Stataria Testo Tritto # Of Dalmatian origin
+               Madussa # Of Celtic origin
+               Daizo Drigissa Mucco Sinna # Of Thracian origin
+           }
+           family = {
+               Agirrid Agronid Annaeid Ballaeid Bardylid Batid Blodid Boikenid Breigid Brykid Carvid Dazaid Epetinid Epicadid Epidamnid Epidid Gentid Glaucid Glavid Grabid Laiscid Loiscid Monunid Mytilid Pinnid Plaianid Plaiid Plarid Platorid Pleuratid Pravaiid Scerdilaidid Sceudid Strabainid Sychid Tadid Temanid Verzid Zanatid Ziraeid Dasid Dasmenid Carvanid Germanid Lavianid Pantid Pinsid Pladomenid Vendid Verzaiid Arvid Belzeid Cambrid Iaritid Lautid Auluzonid Bessid Bitid Dolenid Mucatralid Terid Argurianid Beucid Platid Purtid Sameccid Annid Bizid Breucid Annesid Daeicid Dasantid Scenobarbid Implaiid Lavid Massurid Baolid Ulcidid Temaid Baedarid
+           }
+		}
+		abrian = {}
+		dardanian = {
+			male_names = {
+               Blicities Ninis Pasades Utinadius # Not present among the rest of Illyrians
+               Annus Dasius Epicaris Messius Turelius Turranis Varanus Varidius Beucus Platius Purtus Sameccus Annaius Anneses Bisius Bizo Breucus Anneses Daeicus Dasantus Scenobarbus Implaius Lavius Massurius Baolius Ulcidius Temaius Baedarus # Present among the rest of Illyrians
+               Andinus Andius Plannius # Of Central Illyrian origin
+               Bato Epicadus Longarus Monunius Scerviaedus Times # Of South Illyrian origin
+               Auluporis Auluzon Bithus Celsinus Celsus Cocaius Delus Dizas Dolens Eptaikenthos Mucatralis Mucatus Teres Tzitzis # Of Thracian origin
+           }
+           female_names = {
+               Ambia Bubita Maema Mescena Mesta Momonia Pitta Romma Sausa # Not present among the rest of Illyrians
+               Citto Dasa Dicco Glavicida Lossa Mavida Nevato Passia Surio Sutta Tata Vanno Varanilla # Present among the rest of Illyrians
+               Andia # Of Central Illyrian origin
+               Cinna Etuta Tuta # Of South Illyrian origin
+               Daizo Dida Dinentilla Dizo Ettela Mania Moca Murco Nanea Sita Torcula # Of Thracian origin
+           }
+           family = {
+               Blicitid Ninid Pasadid Utinadid Annid Dasid Epicarid Messid Turelid Turranid Varanid Varidid Andinid Andid Plannid Batid Epicadid Longarid Monunid Scerviaedid Timeid Auluporid Auluzonid Bithid Celsinid Celsid Cocaid Delid Dizaid Dolenid Eptaikenthid Mucatralid Mucatid Terid Tzitzid Beucid Platid Purtid Sameccid Annid Bizid Breucid Annesid Daeicid Dasantid Scenobarbid Implaiid Lavid Massurid Baolid Ulcidid Temaid Baedarid
+           }
+		}
+		italiotian = {}
+		thracian = {
+			 male_names = {
+               Adaeus Amatokos Auluporis Auluzon Bendidoros Berisades Bessus Bithus Brinkainos Brinkazenis Brinkazeris Brinkazis Bryzos Byzas Celsinus Celsus Cersobleptes Cerzula Cetriporis Cocaius Delus Dentubrisa Dentupes Deopus Deospuris Desakenthos Diaskenthos Diazenis Dizapes Dizapor Dizas Dizazelpis Dolens Drenis Eptaikenthos Eptapis Eptaporis Eptenis Eptezenis Ezbenis Gaidres Hebryzelmis Kenthos Kerses Kersibaulos Kersobleptes Ketriporis Ketrizeis Kotys Maisades Marcipor Mukakenthos Mukapaibes Mukapius Mukaporis Mukatralis Mukazenis Naepor Olipor Poris Pytros Raizdos Raskos Reciper Rhaskos Rhaskuporis Rheboulas Rhesos Rhoemetalces Sadalas Satres Sautes Seiciper Seuthes Skaris Skilas Skostodokos Sparatocos Taruthinas Teres Tzitzis Zieisis Ziepyrus Ziles Zipaibes Zipyron
+           }
+           female_names = {
+               Bendidora Daizo Dentustaina Dentusykos Dida Dinentilla Dizo Drigissa Epteporis Eptepus Eptesykos Ettela Kerza Mania Moca Mokasokos Mucco Mukapora Murco Nanea Purizia Rheskutorme Rhymesikos Sinna Sita Torcula
+           }
+           family = {
+               Adaeid Amatokid Auluporid Auluzonid Bendidorid Berisadid Bessid Bithid Brinkainid Brinkazenid Brinkazerid Brinkazid Bryzid Byzid Celsinid Celsid Cersobleptid Cerzulid Cetriporid Cocaid Delid Dentubrisid Dentupid Deopid Deospurid Desakenthid Diaskenthid Diazenid Dizapid Dizaporid Dizid Dizazelpid Dolenid Drenid Eptaikenthid Eptapid Eptaporid Eptenid Eptezenid Ezbenid Gaidrid Hebryzelmid Kenthid Kersid Kersibaulid Kersobleptid Ketriporid Ketrizeid Kotid Maisadid Marciporid Mukakenthid Mukapaibid Mukapid Mukaporid Mukatralid Mukazenid Naeporid Oliporid Porid Pytrid Raizdid Raskid Reciperid Rhaskid Rhaskuporid Rheboulid Rhesid Rhoemetalcid Sadalid Satrid Sautid Seiciperid Seuthid Skarid Skilid Skostodokid Sparatocid Taruthinid Terid Tzitzid Zieisid Ziepyrid Zilid Zipaibid Zipyrid
+           }
+		}
+		cretan = {}
+		greco_illyrian = {
+			 male_names = {
+               Andinus Andius Anneses Annus Aplis Apludus Aplus Apurus Baedarus Baezo Baezus Baolius Bardurius Bato Beucus Beusas Bizo Breucus Carrius Daeicus Daetor Dasantus Dasius Dazomenus Dazos Epicaris Iettus Implaius Laedicalius Laedietis Laidus Lavius Ledrus Massurius Messius Messor Paio Panentius Panes Panto Pantus Plannius Plares Proradus Sarnus Scenobarbus Sestus Statanius Staticus Status Suttis Temaius Tizius Tritonus Tritus Turelius Ulcidius Varanus Varidius Vendo Vepus Verzulus
+               Carvanius Germanus Lavianus Pinsus Pladomenus Verzaiius # Of Dalmatian origin
+               Anadrus Buzetius Ditus Loantius Pantadienus Plator Platurius Rufantius Sestenius Stennas Vendes # Used among the Japodes
+               Turranius Turrinius Turus # Used among the Japodes; of Liburnian origin
+               Andes Iaritus Muntanus Parmanicus Sarius Seneca Silus Sinus # Used among the Japodes; probably of Celtic origin
+               Blaedarus Dasmenus Lensus Sassaius Scilus Surco # Used among the Breuci
+               Cralus Lirus Passalus Liccaius # Used among the Colapiani
+               Scenus # Used among the Jasi
+           }
+           female_names = {
+               Andio Aplo Arbo Callo Cato Curbania Cursulavia Dasa Dasantilla Dasto Genthena Glavicida Iato Lavincia Licco Lossa Mavida Nevato Pantia Passia Platino Samuntio Seio Sesto Stataria Stato Surio Sutta Tito Tritano Varro
+               Stataria Testo Tritto # Of Dalmatian origin
+               Deidmu Dennaia Ditueio Stennato Tatonia Vandano # Used among the Japodes
+               Ammida Matera Maxa # Used among the Japodes; probably of Celtic origin
+               Mellito Nantia Nonntio Poia Sicu # Used among the Japodes; of Celtic origin
+               Arsa # Probably of Thracian origin
+           }
+           family = {
+               Andinid Andid Annesid Annid Aplid Apludid Apurid Baezid Bardurid Batid Beucid Beusid Bizid Carrid Daetorid Dasid Dazomenid Dazid Epicarid Iettid Laedicalid Laedietid Laidid Ledrid Messid Messorid Panentid Panid Pantid Plannid Plarid Proradid Sameccid Sarnid Scenobarbid Statanid Staticid Statid Suttid Tizid Tritonid Tritid Turelid Varanid Varidid Vendid Vepid Verzulid Carvanid Germanid Lavianid Pinsid Pladomenid Platid Verzaiid Anadrid Buzetid Ditid Loantid Pantadienid Platorid Platurid Purtid Rufantid Sestenid Stennid Vendid Turranid Turrinid Turid Iaritid Muntanid Parmanicid Sarid Senecid Silid Sinid Blaedarid Dasmenid Lensid Sassaid Scilid Surcid Cralid Lirid Passalid Liccaid Scenid
+           }
+		}
+		achaean = {}
+		epirote = {}
+		boeotian = {}
+		peloponnesian = {}
+		athenian = {}
+		euboean = {}
+		aetolian = {}
+		aegean = {}
+		greco_pontic = {}
+		lydian = {}
+		troan = {}
+		ionian = {}
+		bithynian = {}
+		cypriot = {}
+		thessalian = {}
+		bosporan = {}
+		syracusan = {}
+		cyrenaican = {}
+		massalian = {}
+	}
+	
+	barbarian_names = { 
+		# Paeonian Tribes
+		AESTRAEI AGRIANES DERRONES DOBERES LAIAIOUS MYGDONES ODOMANTI PAIOPLAI SIRIOPAIONES TRIBALLI 
+
+		# Illyrian Tribes
+		BARIDUSTAE TARIOTES SELEPITANOI PARTHINI BREUCI PIRUSTAE SARDEATI BYLLIONES BALAITES PARTHENI PEUCETI CINAMBRI DASSARETI PENESTI DEUNI NARENSI CHELIDONI BATHIATAE
+
+		# Thracian Tribes
+		MAEDI PAETI SATRI DERSAEI KORPILOI KORELI NIPSAIOI SAPAIOI SINTEIS MELANOPHAGI MELANDITAE CEBRENII
+
+		# Other
+		PELASGOI
+	}
+	
+	
+	
+	graphical_culture = celtic_gfx
+	ethnicities = {
+		10 = greek
+	}
+}

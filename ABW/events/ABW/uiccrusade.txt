@@ -1,0 +1,1180 @@
+﻿namespace = uiccrusade
+
+uiccrusade.1 = { # 
+	type = country_event
+	title = "uiccrusade.1.t"
+	desc = "uiccrusade.1.desc"
+	picture = city_siege
+	goto_location = root.capital_scope
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+	immediate = {
+		## Thessalonika
+		hidden_effect = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					is_in_area = macedonia_area
+					is_in_area = thessaly_area
+					province_id = 363
+					province_id = 364
+					province_id = 365
+					province_id = 366
+					province_id = 374
+					province_id = 377
+					province_id = 378
+					province_id = 376
+					province_id = 408
+					province_id = 400
+					province_id = 3175
+					province_id = 3125
+				}
+			}
+			set_conquered_by = TES
+		}
+		p:373.owner = {
+			set_capital = 373
+			create_character = { # Create ruler for TES
+				set_family = char:0.family
+				first_name = "Bonifacio"
+				culture = piedmontese
+				religion = carthaginian_pantheon
+				age = 54
+				female = no
+				save_scope_as = tes_ruler
+			}
+			set_as_ruler = scope:tes_ruler
+			##Cambiar cultura
+			set_primary_culture = piedmontese
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		## Achaia
+		every_owned_province = {
+			limit = {
+				OR = {
+					is_in_area = achaea_area
+					AND = {
+						is_in_area = south_peleponnesos_area
+						NOT = {
+							province_id = 460
+						}
+					}
+				}
+			}
+			set_conquered_by = ACC
+		}
+		p:440.owner = {
+			set_capital = 440
+			create_character = { # Create ruler for ACC
+				set_family = char:1.family
+				first_name = "Guillaume"
+				culture = burgundian
+				religion = carthaginian_pantheon
+				age = 40
+				female = no
+				save_scope_as = acc_ruler
+			}
+			set_as_ruler = scope:acc_ruler
+			##Cambiar cultura
+			set_primary_culture = burgundian
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		## Athens
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = {
+							is_in_area = central_greece_area
+							is_in_area = aetolia_area
+						}
+						NOT = { 
+							province_id = 472
+							province_id = 277
+						}
+					}
+					province_id = 463
+				}
+			}
+			set_conquered_by = ATH
+		}
+		p:416.owner = {
+			set_capital = 416
+			create_character = { # Create ruler for ATH
+				set_family = char:2.family
+				first_name = "Othon"
+				culture = burgundian
+				religion = carthaginian_pantheon
+				age = 38
+				female = no
+				save_scope_as = acc_ruler
+			}
+			set_as_ruler = scope:acc_ruler
+			##Cambiar cultura
+			set_primary_culture = burgundian
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		c:TES = {
+			make_subject = { 
+				target = ACC
+				type = feudatory
+			}
+			make_subject = { 
+				target = ATH
+				type = feudatory
+			}
+		}
+		
+		every_army = {
+			destroy_unit = yes
+		}
+		every_navy = {
+			destroy_unit = yes
+		}
+		c:BUL = {
+			trigger_event = {
+				id = uiccrusade.2
+				days = { 12 20 }
+			}
+		}
+		c:CIL = {
+			trigger_event = {
+				id = uiccrusade.2
+				days = { 12 20 }
+			}
+		}
+		c:RUM = {
+			trigger_event = {
+				id = uiccrusade.2
+				days = { 15 30 }
+			}
+		}
+		c:SER = {
+			trigger_event = {
+				id = uiccrusade.2
+				days = { 18 38 }
+			}
+		}
+		}
+	}
+	
+	option = { ###################Play Latin Empire
+		name = "uiccrusade.1.a"
+		custom_tooltip = "uiccrusade.1.at"
+		
+		hidden_effect = {
+		
+		## Latin Empire
+		change_country_name = "LAT"
+		change_country_flag = "LAT"
+		change_country_tag = "LAT"
+		change_country_adjective = "LAT_ADJ"
+		change_country_color = "latins_color"
+		set_primary_culture = flemish
+		create_character = { # Create ruler for LAT
+			set_family = char:6.family
+			first_name = "Baudouin"
+			culture = flemish
+			religion = carthaginian_pantheon
+			age = 33
+			female = no
+			save_scope_as = lat_ruler
+		}
+		set_as_ruler = scope:lat_ruler
+		make_subject = { 
+			target = TES
+			type = feudatory
+		}
+		
+		## Epirus
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						is_in_area = epirus_area
+						NOT = { 
+							province_id = 461
+							province_id = 463
+						}
+					}
+					province_id = 422
+					province_id = 3192
+					province_id = 455
+					province_id = 1445
+				}
+			}
+			set_conquered_by = EPI
+		}
+		p:419.owner = {
+			set_capital = 419
+			create_character = { # Create ruler for EPI
+				set_family = char:3.family
+				first_name = "Michael"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 34
+				female = no
+				save_scope_as = epi_ruler
+			}
+			set_as_ruler = scope:epi_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		c:EPI = {
+			p:463 = { add_claim = EPI }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:463
+				target = p:463.owner
+			}
+		}
+		
+		## Trebizond
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							is_in_area = taurica_area
+							is_in_area = bekhyria_area
+							is_in_area = tayk_area
+							is_in_area = upper_armenia_area
+							is_in_area = armenia_maior_area
+							is_in_area = armenia_minor_area
+							is_in_area = machelonia_area
+							is_in_area = pontus_area
+							is_in_area = paphlagonia_superior_area
+							is_in_area = paphlagonia_inferior_area
+						}
+						NOT = { 
+							province_id = 217
+							province_id = 232
+							province_id = 212
+							province_id = 208
+							province_id = 211
+							province_id = 206
+						}
+					}
+				}
+			}
+			set_conquered_by = TRB
+		}
+		p:1734.owner = {
+			set_capital = 1734
+			create_character = { # Create ruler for TRB
+				set_family = char:3.family
+				first_name = "Alexios"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 22
+				female = no
+				save_scope_as = trb_ruler
+			}
+			set_as_ruler = scope:trb_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		## Nicaean Empire
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							region = cilicia_region
+							region = asia_region
+							region = galatia_region
+							is_in_area = bithynia_superior_area
+							is_in_area = heracleotis_area
+							is_in_area = paphlagonia_inferior_area
+							is_in_area = aegean_islands_area
+						}
+						NOT = { 
+							is_in_area = mysia_area
+							province_id = 258
+							province_id = 259
+							province_id = 260
+							province_id = 281
+							province_id = 265
+							province_id = 269
+							province_id = 250
+							province_id = 286
+							province_id = 283
+							province_id = 284
+						}
+					}
+					province_id = 244
+					province_id = 249
+					province_id = 247
+					province_id = 217
+					province_id = 232
+					province_id = 280
+					province_id = 461
+					province_id = 297
+					province_id = 270
+					province_id = 277
+					province_id = 460
+				}
+			}
+			set_conquered_by = NIC
+		}
+		p:244.owner = {
+			set_capital = 244
+			create_character = { # Create ruler for NIC
+				set_family = char:4.family
+				first_name = "Theodoros"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = nic_ruler
+			}
+			set_as_ruler = scope:nic_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		p:244 = { add_claim = root }
+		declare_war_with_wargoal = {
+			war_goal = conquer_wargoal
+			province = p:244
+			target = p:244.owner
+		}
+		c:NIC = {
+			p:1453 = { add_claim = NIC }
+		}
+		c:TRB = {
+			p:1453 = { add_claim = TRB }
+		}
+		}
+	}
+	
+	option = { #################Play Nicaea Empire
+		name = "uiccrusade.1.b"
+		custom_tooltip = "uiccrusade.1.bt"
+		hidden_effect = {
+		
+		## Nicaean Empire
+		change_country_name = "NIC"
+		change_country_flag = "NIC"
+		change_country_tag = "NIC"
+		change_country_adjective = "NIC_ADJ"
+		change_country_color = "nicaea_color"
+		set_capital = 244
+		set_primary_culture = greek
+		create_character = { # Create ruler for NIC
+			set_family = char:4.family
+			first_name = "Theodoros"
+			culture = greek
+			religion = carthaginian_pantheon
+			age = 30
+			female = no
+			save_scope_as = nic_ruler
+		}
+		set_as_ruler = scope:nic_ruler
+		
+		## Epirus
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						is_in_area = epirus_area
+						NOT = { 
+							province_id = 461
+							province_id = 463
+						}
+					}
+					province_id = 422
+					province_id = 3192
+					province_id = 455
+					province_id = 1445
+				}
+			}
+			set_conquered_by = EPI
+		}
+		p:419.owner = {
+			set_capital = 419
+			create_character = { # Create ruler for EPI
+				set_family = char:3.family
+				first_name = "Michael"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 34
+				female = no
+				save_scope_as = epi_ruler
+			}
+			set_as_ruler = scope:epi_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		c:EPI = {
+			p:463 = { add_claim = EPI }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:463
+				target = p:463.owner
+			}
+		}
+		
+		## Trebizond
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							is_in_area = taurica_area
+							is_in_area = bekhyria_area
+							is_in_area = tayk_area
+							is_in_area = upper_armenia_area
+							is_in_area = armenia_maior_area
+							is_in_area = armenia_minor_area
+							is_in_area = machelonia_area
+							is_in_area = pontus_area
+							is_in_area = paphlagonia_superior_area
+							is_in_area = paphlagonia_inferior_area
+						}
+						NOT = { 
+							province_id = 217
+							province_id = 232
+							province_id = 212
+							province_id = 208
+							province_id = 211
+							province_id = 206
+						}
+					}
+				}
+			}
+			set_conquered_by = TRB
+		}
+		p:1734.owner = {
+			set_capital = 1734
+			create_character = { # Create ruler for TRB
+				set_family = char:3.family
+				first_name = "Alexios"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 22
+				female = no
+				save_scope_as = trb_ruler
+			}
+			set_as_ruler = scope:trb_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		## Latin Empire
+		every_owned_province = {
+			limit = {
+				NOR = {
+					AND = { 
+						OR = { 
+							region = cilicia_region
+							region = asia_region
+							region = galatia_region
+							is_in_area = bithynia_superior_area
+							is_in_area = heracleotis_area
+							is_in_area = paphlagonia_inferior_area
+							is_in_area = aegean_islands_area
+						}
+						NOT = { 
+							is_in_area = mysia_area
+							province_id = 258
+							province_id = 259
+							province_id = 260
+							province_id = 281
+							province_id = 265
+							province_id = 269
+							province_id = 250
+							province_id = 286
+							province_id = 283
+							province_id = 284
+						}
+					}
+					province_id = 244
+					province_id = 249
+					province_id = 247
+					province_id = 217
+					province_id = 232
+					province_id = 280
+					province_id = 461
+					province_id = 297
+					province_id = 270
+					province_id = 277
+					province_id = 460
+				}
+			}
+			set_conquered_by = LAT
+		}
+		p:1453.owner = {
+			set_capital = 1453
+			create_character = { # Create ruler for LAT
+				set_family = char:6.family
+				first_name = "Baudouin"
+				culture = flemish
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = lat_ruler
+			}
+			set_as_ruler = scope:lat_ruler
+			##Cambiar cultura
+			set_primary_culture = flemish
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		c:LAT = {
+			make_subject = { 
+				target = TES
+				type = feudatory
+			}
+		}
+		p:1453 = { add_claim = root }
+		declare_war_with_wargoal = {
+			war_goal = conquer_wargoal
+			province = p:1453
+			target = p:1453.owner
+		}
+		c:TRB = {
+			p:1453 = { add_claim = TRB }
+		}
+		}
+	}
+	
+	option = { ###############Play Trebizond
+		name = "uiccrusade.1.c"
+		custom_tooltip = "uiccrusade.1.ct"
+		
+		hidden_effect = {
+		
+		## Trebizond
+		change_country_name = "TRB"
+		change_country_flag = "TRB"
+		change_country_tag = "TRB"
+		change_country_adjective = "TRB_ADJ"
+		change_country_color = "trebi_color"
+		set_primary_culture = greek
+		set_capital = 1734
+		create_character = { # Create ruler for TRB
+			set_family = char:3.family
+			first_name = "Alexios"
+			culture = greek
+			religion = carthaginian_pantheon
+			age = 22
+			female = no
+			save_scope_as = trb_ruler
+		}
+		set_as_ruler = scope:trb_ruler
+		p:1453 = { add_claim = root }
+		
+		## Epirus
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						is_in_area = epirus_area
+						NOT = { 
+							province_id = 461
+							province_id = 463
+						}
+					}
+					province_id = 422
+					province_id = 3192
+					province_id = 455
+					province_id = 1445
+				}
+			}
+			set_conquered_by = EPI
+		}
+		p:419.owner = {
+			set_capital = 419
+			create_character = { # Create ruler for EPI
+				set_family = char:3.family
+				first_name = "Michael"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 34
+				female = no
+				save_scope_as = epi_ruler
+			}
+			set_as_ruler = scope:epi_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		c:EPI = {
+			p:463 = { add_claim = EPI }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:463
+				target = p:463.owner
+			}
+		}
+		
+		## Nicaean Empire
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							region = cilicia_region
+							region = asia_region
+							region = galatia_region
+							is_in_area = bithynia_superior_area
+							is_in_area = heracleotis_area
+							is_in_area = aegean_islands_area
+						}
+						NOT = { 
+							is_in_area = mysia_area
+							province_id = 258
+							province_id = 259
+							province_id = 260
+							province_id = 281
+							province_id = 265
+							province_id = 269
+							province_id = 250
+							province_id = 286
+							province_id = 283
+							province_id = 284
+						}
+					}
+					province_id = 244
+					province_id = 249
+					province_id = 247
+					province_id = 217
+					province_id = 232
+					province_id = 280
+					province_id = 461
+					province_id = 297
+					province_id = 270
+					province_id = 277
+					province_id = 460
+					province_id = 206
+					province_id = 211
+					province_id = 208
+					province_id = 212
+				}
+			}
+			set_conquered_by = NIC
+		}
+		p:244.owner = {
+			set_capital = 244
+			create_character = { # Create ruler for NIC
+				set_family = char:4.family
+				first_name = "Theodoros"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = nic_ruler
+			}
+			set_as_ruler = scope:nic_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		## Latin Empire
+		every_owned_province = {
+			limit = {
+				NOR = {
+					AND = { 
+						OR = { 
+							is_in_area = taurica_area
+							is_in_area = bekhyria_area
+							is_in_area = tayk_area
+							is_in_area = upper_armenia_area
+							is_in_area = armenia_maior_area
+							is_in_area = armenia_minor_area
+							is_in_area = machelonia_area
+							is_in_area = pontus_area
+							is_in_area = paphlagonia_superior_area
+							is_in_area = paphlagonia_inferior_area
+						}
+						NOT = { 
+							province_id = 217
+							province_id = 232
+							province_id = 212
+							province_id = 208
+							province_id = 211
+							province_id = 206
+						}
+					}
+				}
+			}
+			set_conquered_by = LAT
+		}
+		p:1453.owner = {
+			set_capital = 1453
+			create_character = { # Create ruler for LAT
+				set_family = char:6.family
+				first_name = "Baudouin"
+				culture = flemish
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = lat_ruler
+			}
+			set_as_ruler = scope:lat_ruler
+			##Cambiar cultura
+			set_primary_culture = flemish
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		c:LAT = {
+			make_subject = { 
+				target = TES
+				type = feudatory
+			}
+		}
+		c:NIC = {
+			p:1453 = { add_claim = NIC }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:1453
+				target = p:1453.owner
+			}
+		}
+		}
+	}
+	
+	option = { #################Play Epirus
+		name = "uiccrusade.1.d"
+		custom_tooltip = "uiccrusade.1.dt"
+		
+		hidden_effect = {
+		
+		## Epirus
+		change_country_name = "EPI"
+		change_country_flag = "EPI"
+		change_country_tag = "EPI"
+		change_country_adjective = "EPI_ADJ"
+		change_country_color = "epi_color"
+		set_primary_culture = greek
+		set_capital = 419
+			create_character = { # Create ruler for EPI
+				set_family = char:3.family
+				first_name = "Michael"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 34
+				female = no
+				save_scope_as = epi_ruler
+			}
+		set_as_ruler = scope:epi_ruler
+		p:463 = { add_claim = root }
+		declare_war_with_wargoal = {
+			war_goal = conquer_wargoal
+			province = p:463
+			target = p:463.owner
+		}
+		
+		## Trebizond
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							is_in_area = taurica_area
+							is_in_area = bekhyria_area
+							is_in_area = tayk_area
+							is_in_area = upper_armenia_area
+							is_in_area = armenia_maior_area
+							is_in_area = armenia_minor_area
+							is_in_area = machelonia_area
+							is_in_area = pontus_area
+							is_in_area = paphlagonia_superior_area
+							is_in_area = paphlagonia_inferior_area
+						}
+						NOT = { 
+							province_id = 217
+							province_id = 232
+							province_id = 212
+							province_id = 208
+							province_id = 211
+							province_id = 206
+						}
+					}
+				}
+			}
+			set_conquered_by = TRB
+		}
+		p:1734.owner = {
+			set_capital = 1734
+			create_character = { # Create ruler for TRB
+				set_family = char:3.family
+				first_name = "Alexios"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 22
+				female = no
+				save_scope_as = trb_ruler
+			}
+			set_as_ruler = scope:trb_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		## Nicaean Empire
+		every_owned_province = {
+			limit = {
+				OR = {
+					AND = { 
+						OR = { 
+							region = cilicia_region
+							region = asia_region
+							region = galatia_region
+							is_in_area = bithynia_superior_area
+							is_in_area = heracleotis_area
+							is_in_area = paphlagonia_inferior_area
+							is_in_area = aegean_islands_area
+						}
+						NOT = { 
+							is_in_area = mysia_area
+							province_id = 258
+							province_id = 259
+							province_id = 260
+							province_id = 281
+							province_id = 265
+							province_id = 269
+							province_id = 250
+							province_id = 286
+							province_id = 283
+							province_id = 284
+						}
+					}
+					province_id = 244
+					province_id = 249
+					province_id = 247
+					province_id = 217
+					province_id = 232
+					province_id = 280
+					province_id = 461
+					province_id = 297
+					province_id = 270
+					province_id = 277
+					province_id = 460
+				}
+			}
+			set_conquered_by = NIC
+		}
+		p:244.owner = {
+			set_capital = 244
+			create_character = { # Create ruler for NIC
+				set_family = char:4.family
+				first_name = "Theodoros"
+				culture = greek
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = nic_ruler
+			}
+			set_as_ruler = scope:nic_ruler
+			##Cambiar cultura
+			set_primary_culture = greek
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		
+		## Latin Empire
+		every_owned_province = {
+			limit = {
+				NOR = {
+					AND = { 
+						is_in_area = epirus_area
+						NOT = { 
+							province_id = 461
+							province_id = 463
+						}
+					}
+					province_id = 422
+					province_id = 3192
+					province_id = 455
+					province_id = 1445
+				}
+			}
+			set_conquered_by = LAT
+		}
+		p:1453.owner = {
+			set_capital = 1453
+			create_character = { # Create ruler for LAT
+				set_family = char:6.family
+				first_name = "Baudouin"
+				culture = flemish
+				religion = carthaginian_pantheon
+				age = 30
+				female = no
+				save_scope_as = lat_ruler
+			}
+			set_as_ruler = scope:lat_ruler
+			##Cambiar cultura
+			set_primary_culture = flemish
+			set_country_religion = carthaginian_pantheon
+			change_government = oligarchic_republic
+			add_treasury = 50.0
+		}
+		c:LAT = {
+			make_subject = { 
+				target = TES
+				type = feudatory
+			}
+		}
+		c:NIC = {
+			p:1453 = { add_claim = NIC }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:1453
+				target = p:1453.owner
+			}
+		}
+		c:TRB = {
+			p:1453 = { add_claim = TRB }
+		}
+		}
+	}
+}
+
+#############################################################################################################
+uiccrusade.2 = { # 
+	type = country_event
+	title = "uiccrusade.2.t"
+	desc = "uiccrusade.2.desc"
+	picture = city_siege
+	goto_location = root.capital_scope
+
+	trigger = {
+		
+	}
+	
+	immediate = {
+		if = { 
+			limit = {
+				tag = BUL
+			}
+			p:421.owner = {
+				trigger_event = {
+					id = uiccrusade.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "uiccrusade.2.a"
+		if = { #BUL
+			limit = {
+				tag = BUL
+			}
+			p:480 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:480
+				target = p:480.owner
+			}
+		}
+		else_if = { #SER
+			limit = {
+				tag = SER
+			}
+			p:4094 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:4094
+				target = p:4094.owner
+			}
+		}
+		else_if = { #RUM
+			limit = {
+				tag = RUM
+			}
+			p:1925 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:1925
+				target = p:1925.owner
+			}
+			p:1734 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:1734
+				target = p:1734.owner
+			}
+			c:GEO = {
+				trigger_event = {
+					id = uiccrusade.3
+					days = { 6 12 }
+				}
+			}
+		}
+		else_if = { #CIL
+			limit = {
+				tag = CIL
+			}
+			p:1892 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:1892
+				target = p:1892.owner
+			}
+		}
+		else = {
+			p:2264 = { add_claim = root }
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = p:2264
+				target = p:2264.owner
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 98
+				OR = {
+					tag = BUL
+					tag = CIL
+					tag = RUM
+				}
+			}
+			modifier = {
+				add = 20
+				OR = {
+					tag = SER
+				}
+			}
+			modifier = {
+				add = 100
+				OR = {
+					owns = 419
+				}
+			}
+		}
+	}
+	option = {
+		name = "uiccrusade.2.b"
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 2
+				OR = {
+					tag = BUL
+					tag = CIL
+					tag = RUM
+				}
+			}
+			modifier = {
+				add = 80
+				OR = {
+					tag = SER
+				}
+			}
+		}
+		add_truce = {
+			target = p:1453.owner #Latins
+			duration = 912
+		}
+		add_truce = {
+			target = p:244.owner #Nicaea
+			duration = 912
+		}
+		add_truce = {
+			target = p:419.owner #Epirus
+			duration = 912
+		}
+		add_truce = {
+			target = p:1734.owner #Trebizond
+			duration = 912
+		}
+		add_truce = {
+			target = VEN
+			duration = 912
+		}
+		add_truce = {
+			target = GEN
+			duration = 912
+		}
+	}
+}
+
+####################################################################
+uiccrusade.3 = { # 
+	type = country_event
+	title = "uiccrusade.3.t"
+	desc = "uiccrusade.3.desc"
+	picture = city_siege
+	goto_location = root.capital_scope
+
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "uiccrusade.3.a"
+		p:4037 = { add_claim = root }
+		declare_war_with_wargoal = {
+			war_goal = conquer_wargoal
+			province = p:4037
+			target = p:4037.owner
+		}
+	}
+}
+
+##############################################################
+
+uiccrusade.4 = { # 
+	type = country_event
+	title = "uiccrusade.4.t"
+	desc = "uiccrusade.4.desc"
+	picture = gladiators
+
+	trigger = {
+		current_date < 1205.1.1
+		owns = 244
+		NOT = { has_variable = uiccrusade4_flag }
+	}
+	
+	immediate = {
+		set_variable = uiccrusade4_flag
+	}
+	
+	option = {
+		name = "uiccrusade.4.a"
+		
+	}
+}

@@ -1,0 +1,43 @@
+﻿germanic = {
+	color = hsv { 0.05 0.7 0.3 }
+	male_names = {
+		Baudouin
+	}
+	female_names = {
+		Actihild 
+	}
+	family = {
+		Flanders.Flanders.Flanders.Flanders
+	}
+	culture = {
+		flemish = {}
+		#
+		saxonian = {}
+		anglian = {}
+		reudingian = {}
+		teutonian = {}
+		cimbrian = {}
+		herulian = {}
+		rugian = {}
+		helveconian = {}
+		bastarnae = {}
+		gutones = {}
+		suiones = {}
+		vandal = {}
+		raumarician = {}
+		irminonic = {}
+		istvaeonic = {}
+		ingvaeonic = {}
+		suebian = {}
+		lemovian = {}
+		gothonic = {}
+		frisian = {}
+	}
+	barbarian_names = { AMBRONES ANGLII ANGRIVARII AUIONES BATAVI BRUCTERI CALUCONES CHATTI CHAUCI CHERUSCI CIMBRI DULGUMNII FRISII HERMUNDURI INGVAEONES LANGOBARDI LUGII MARCOMANNI QUADI SEMNONES SUGAMBRI TENCTERI TEUTONES UBII USIPI VARISTI }
+	
+	graphical_culture = german_gfx
+	ethnicities = {
+		10 = germanic
+	}
+}
+	

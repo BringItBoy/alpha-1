@@ -1,0 +1,48 @@
+﻿gallic = {
+
+	color = hsv { 0.3 0.7 0.4 }
+
+	male_names = {
+		Guillaume Othon
+	}
+	female_names = {
+		Aife
+	}
+	family = {
+		Champlitte.Champlitte.Champlitte.Champlitte
+		Roche.Roche.Roche.Roche
+	}
+	culture = {
+		burgundian = {}
+		#
+		belgic = {}
+		aremorican = {}
+		lepontic = {}
+		vindelician = {}
+		helvetian = {}
+		belgae = {}
+		biturigan = {}
+		volcae = {}
+		noric = {}
+		salluvian = {}
+		haedui = {}
+		carnuti = {}
+		treverian = {}
+		santonian = {}
+		lemovician = {}
+		pictonian = {}
+		aulercian = {}
+		celtic_pannonian = {}
+		arverni = {}
+		carnian = {}
+		letobician = {}
+		boian = {}
+	}
+	
+	barbarian_names = { INSUBRES LINGONES SENONES TAURINI ALLOBROGES AMBIANI CADURCI BITURIGES LEUCI LEXOVII MENAPII NAMNETES NITIOBROGES OSISMII RAURACI SALLUVII TREVIRI TRIBOCI VELIOCASSES }
+	
+	graphical_culture = celtic_gfx	
+	ethnicities = {
+		10 = celtic
+	}
+}

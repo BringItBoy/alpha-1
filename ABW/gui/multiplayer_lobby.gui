@@ -1819,15 +1819,15 @@ JominiMultiplayerLobby = {
 	
 			country_flag = {
 				position = { 218 0 }
-				name = "Seleucids"
-				tooltip = "SELINTRO"
-				onmousehierarchyenter = "[SetHighlightCountry( GetCountry('SEL').Self )]"
+				name = "Jerusalem"
+				tooltip = "JERINTRO"
+				onmousehierarchyenter = "[SetHighlightCountry( GetCountry('JER').Self )]"
 				onmousehierarchyleave = "[ClearHighlightColors]"
 				
 				blockoverride "flag"
 				{
-					texture = "[GetCountry('SEL').AccessCoatOfArms.GetTexture('(int32)56','(int32)56')]"
-					frame = "[GetCountry('SEL').AccessCoatOfArms.GetFrame('(int32)56','(int32)56')]"
+					texture = "[GetCountry('JER').AccessCoatOfArms.GetTexture('(int32)56','(int32)56')]"
+					frame = "[GetCountry('JER').AccessCoatOfArms.GetFrame('(int32)56','(int32)56')]"
 					framesize = { 56 56 }
 				}
 				
@@ -1838,7 +1838,7 @@ JominiMultiplayerLobby = {
 				
 				blockoverride "click"
 				{
-					onclick = "[SetLobbyCountryTag('SEL')]"
+					onclick = "[SetLobbyCountryTag('JER')]"
 					clicksound = "event:/SFX/UI/Province/sfx_ui_province_select"
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_mouse_over"
 				}
@@ -1846,15 +1846,15 @@ JominiMultiplayerLobby = {
 	
 			country_flag = {
 				position = { 272 0 }
-				name = "Phrygia"
-				tooltip = "PRYINTRO"
-				onmousehierarchyenter = "[SetHighlightCountry( GetCountry('PRY').Self )]"
+				name = "Austria"
+				tooltip = "AUSINTRO"
+				onmousehierarchyenter = "[SetHighlightCountry( GetCountry('AUS').Self )]"
 				onmousehierarchyleave = "[ClearHighlightColors]"
 				
 				blockoverride "flag"
 				{
-					texture = "[GetCountry('PRY').AccessCoatOfArms.GetTexture('(int32)56','(int32)56')]"
-					frame = "[GetCountry('PRY').AccessCoatOfArms.GetFrame('(int32)56','(int32)56')]"
+					texture = "[GetCountry('AUS').AccessCoatOfArms.GetTexture('(int32)56','(int32)56')]"
+					frame = "[GetCountry('AUS').AccessCoatOfArms.GetFrame('(int32)56','(int32)56')]"
 					framesize = { 56 56 }
 				}
 				
@@ -1865,7 +1865,7 @@ JominiMultiplayerLobby = {
 				
 				blockoverride "click"
 				{
-					onclick = "[SetLobbyCountryTag('PRY')]"
+					onclick = "[SetLobbyCountryTag('AUS')]"
 					clicksound = "event:/SFX/UI/Province/sfx_ui_province_select"
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_mouse_over"
 				}

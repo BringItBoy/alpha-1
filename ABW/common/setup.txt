@@ -10364,8 +10364,340 @@ provinces = { #Any entry must contain a comment with city name.
 	# Barbarian Spawn Spots
 	########################################
 	
-	###########If we want to add barb spots or something else
-	#I delete all them to stop barbs from spawning
+	#Egypt & Surroundings
+	
+	
+	5294 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5293 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5321 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5334 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5333 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5337 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5338 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5341 = {
+		modifier = { modifier = major_barbarian_spawn_place }
+	}
+	5352 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5355 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5366 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5367 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5947 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5948 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5989 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5991 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5992 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5993 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5994 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5995 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5157 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+	#Mauretania
+	5984 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5985 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5986 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5987 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+	#Germany
+	5023 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5029 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5031 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5141 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5114 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5145 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5047 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5068 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5076 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5079 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5085 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5103 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5110 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5136 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5298 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5283 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5284 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5381 = {
+		modifier = { modifier = minor_barbarian_spawn_place }
+	}
+	#Iberia
+	5184 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+	
+	5093 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+	#East
+	5217 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5263 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5232 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5233 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5237 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5247 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5274 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5226 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6046 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5290 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5291 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5296 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5300 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5301 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7558 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6045 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7573 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6049 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5208 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5224 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5252 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5303 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5934 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6795 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6064 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+	#India
+	5248 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5249 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5270 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5277 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5280 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5305 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5308 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5313 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5314 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5315 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5359 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5378 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5962 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	5958 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6057 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6058 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6059 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	3316 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7291 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6050 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6051 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6052 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6053 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6054 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6055 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	6056 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7051 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7021 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7357 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7298 = {
+		modifier = { modifier = major_barbarian_spawn_place }
+	}
+	7299 = {
+		modifier = { modifier = major_barbarian_spawn_place }
+	}
+	7640 = {
+		modifier = { modifier = major_barbarian_spawn_place }
+	}
+	7641 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7642 = {
+		modifier = { modifier = major_barbarian_spawn_place }
+	}
+	7643 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	7644 = {
+		modifier = { modifier = generic_barbarian_spawn_place }
+	}
+	
+}
 
 road_network = {
 	1 = 15		#Roma - Ostia
@@ -10730,7 +11062,6 @@ road_network = {
 	4421 = 4423 # Soreyya
 
 	##Roman Road Network
-	
 	#Italy
 	8 = 40		# WIP Names of provinces are subject to change
 	40 = 1713 	

@@ -86,3 +86,7 @@ jainism = { # Jain
 	color = hsv { 0.7 0.2 0.2 }
 	freemen_promotion_cost_modifier = -0.1
 }
+catholicism = { # catholicism
+	color = hsv { 0.51 0.59 1.0 }
+	freemen_promotion_cost_modifier = -0.1
+}

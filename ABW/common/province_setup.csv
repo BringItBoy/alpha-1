@@ -1,5 +1,5 @@
 #ProvID; Culture; Religion; TradeGoods; Citizens; Freedmen; Slaves; Tribesmen; Civilization; Barbarian; NameRef;AraRef,,,,,,,,,,,
-1,roman,catholicism,cloth,21,15,4,3,40,0,Roma,Latium
+1,roman,roman_pantheon,cloth,21,15,4,3,40,0,Roma,Latium
 2,roman,roman_pantheon,wine,7,8,6,0,40,0,Tibur,Latium
 3,roman,roman_pantheon,salt,8,8,3,0,40,0,Lavinium,Latium
 4,roman,roman_pantheon,wood,8,8,5,0,40,0,Circeii,Latium

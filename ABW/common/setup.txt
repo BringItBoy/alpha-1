@@ -10367,7 +10367,7 @@ provinces = { #Any entry must contain a comment with city name.
 	###########If we want to add barb spots or something else
 	#I delete all them to stop barbs from spawning
 
- road_network = {
+road_network = {
 	1 = 15		#Roma - Ostia
 	#Via Appia:
 	1 = 2		#Roma - Tibur

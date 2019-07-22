@@ -135,3 +135,11 @@ CIL = {
 	color1={ 255 255 255 }
 }
 
+BRI = {
+	pattern = "pattern_ui09.tga"
+	color1={ 0 0 0 }
+	color2={ 255 255 255}
+}
+
+
+
